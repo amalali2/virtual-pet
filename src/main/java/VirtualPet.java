@@ -3,13 +3,13 @@ import java.util.Random;
 public class VirtualPet<rand> {
 
 	Random rand = new Random();
+	
 	int playing;
 	int tickUpdt = rand.nextInt(20) + 1;
 	int hunger = rand.nextInt(20) + 1;
 	int play = rand.nextInt(20) + 1;
 	int sleep = rand.nextInt(20) + 1;
 
-	
 	public void hungry() {
 			hunger = hunger - 20;
 			play = play + 20;
@@ -25,13 +25,7 @@ public class VirtualPet<rand> {
 				sleep = sleep - 20;
 				play = play - 10;
 				}
-		
-//		public void tick() {
-//				hunger = hunger + 1;
-//				sleep = sleep + 1;
-//				play = play + 1;
-				
-//				}
+			
 		boolean isHungry() {
 			return hunger >= 5;
 		}
@@ -45,10 +39,11 @@ public class VirtualPet<rand> {
 			hunger = hunger + 5;
 			play = play + 5;
 			sleep = sleep + 5;
-	
+		
+		}}
+		
+		
 
-		}
-}
 		
 		
 
